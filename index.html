@@ -15,12 +15,14 @@
     <div class="container">
       <div class="heading"><h1>Insurance tracker</h1></div>
       <div class="flex-column">
+        <!-- <div class="message-box"></div> -->
         <div class="flex-column1">
           <!--form-->
-          <form action="" class="form-inline">
+          <form action="" id="insurance-form" class="form-inline">
             <div class="box">
               <label for="policy_number">Policy Number:</label>
               <input
+                id="pnumber"
                 class="input-fields"
                 type="text"
                 placeholder="Enter Policy number"
@@ -30,27 +32,30 @@
             <div class="box">
               <label for="amount">Amount:</label>
               <input
+                id="amount"
                 class="input-fields"
                 type="text"
-                placeholder="Enter Policy number"
+                placeholder="Enter Amount"
                 name="number"
               />
             </div>
             <div class="box">
               <label for="user">User:</label>
               <input
+                id="user"
                 class="input-fields"
                 type="text"
-                placeholder="Enter Policy number"
+                placeholder="Enter User"
                 name="number"
               />
             </div>
             <div class="box">
               <label for="Renewal date">Renewal date:</label>
               <input
+                id="date"
                 class="input-fields"
                 type="text"
-                placeholder="Enter Policy number"
+                placeholder="Enter Date"
                 name="number"
               />
             </div>
@@ -63,30 +68,35 @@
         <div class="flex-column2" id="form-value">
           <!--Table-->
           <table>
-            <tr>
-              <th>Policy Number</th>
-              <th>Amount</th>
-              <th>User</th>
-              <th>Renewal Date</th>
-              <th>Delete</th>
-            </tr>
-            <tr>
-              <td>78452</td>
-              <td>$12548</td>
-              <td>Swarn</td>
-              <td>8/09/2020</td>
-              <td><button class="btn-delete">Delete</button></td>
-            </tr>
-            <tr>
-              <td>78452</td>
-              <td>$12548</td>
-              <td>Swarn</td>
-              <td>8/09/2020</td>
-              <td><button class="btn-delete">Delete</button></td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Policy Number</th>
+                <th>Amount</th>
+                <th>User</th>
+                <th>Renewal Date</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="data-list">
+              <!-- <tr>
+                <td>78452</td>
+                <td>$12548</td>
+                <td>Swarn</td>
+                <td>8/09/2020</td>
+                <td><button class="btn-delete">Delete</button></td>
+              </tr>
+              <tr>
+                <td>78452</td>
+                <td>$12548</td>
+                <td>Swarn</td>
+                <td>8/09/2020</td>
+                <td><button class="btn-delete">Delete</button></td>
+              </tr> -->
+            </tbody>
           </table>
         </div>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
